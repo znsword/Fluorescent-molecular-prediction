@@ -125,7 +125,7 @@ def buildModel():
     l6 = Dense(320, activation='relu')
     l5 = Dropout(rate=0.2)  # 定义一个随机失活层，用于在训练过程中随机地将部分神经元置零，以防止过拟合。
     l7 = Dense(192, activation='relu')
-    l1 = Dropout(rate=0.2)  # 定义一个随机失活层，用于在训练过程中随机地将部分神经元置零，以防止过拟合。
+    l1 = Dropout(rate=0.1)  # 定义一个随机失活层，用于在训练过程中随机地将部分神经元置零，以防止过拟合。
     l8 = Dense(1)
 
     layers = [l4, l5, l6, l7, l1, l8]
